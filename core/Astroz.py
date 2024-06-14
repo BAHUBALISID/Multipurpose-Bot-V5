@@ -35,7 +35,7 @@ class Astroz(commands.AutoShardedBot):
 
   async def on_connect(self):
     await self.change_presence(status=discord.Status.idle,
-                               activity=discord.Activity(                             type=discord.ActivityType.listening,
+                               activity=discord.Activity(                             type=discord.ActivityType.streaming,
                                  name=statusText))
 
   async def send_raw(self, channel_id: int, content: str,
